@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AirMonitor.Views.MainPage"
+             x:Class="AirMonitor.Views.DetailsPage"
              xmlns:controls="clr-namespace:AirMonitor.Views.Controls"
              BackgroundColor="#f9f9f9">
 
@@ -14,15 +14,8 @@
                 Padding="24"
                 Spacing="12">
                 <Frame
-                    CornerRadius="50"
-                    Padding="0"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    HeightRequest="100"
-                    WidthRequest="100"
-                    HasShadow="False"
-                    BackgroundColor="#33f069"
-                    BorderColor="Gray">
+                    Style="{StaticResource CaqiFrameStyle}">
+
                     <Label
                      HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center">
@@ -45,10 +38,11 @@
                 </Frame>
                 <Label
                     Text="Świetna jakość!"
-                    FontSize="20"
-                    TextColor="Black"
-                    FontAttributes="Bold"
-                    HorizontalTextAlignment="Center"/>
+                    Style="{StaticResource TitleStyle}"
+                
+                    
+                 
+                  HorizontalTextAlignment="Center"/>
                 <Label
                     Text="Możesz bezpiecznie wyjść z domu bez swojej maski anty-smogowej i nie bać się o swoje zdrowie."
                     FontSize="14"
